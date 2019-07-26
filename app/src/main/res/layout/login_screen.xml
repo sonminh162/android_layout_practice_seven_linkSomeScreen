@@ -9,15 +9,107 @@
     android:orientation="vertical">
 
     <TextView
-
-        android:textSize="@dimen/sp36"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="@dimen/sp18"
         android:textColor="@color/gainSbroro"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="@dimen/dp30"
         android:text="@string/sign_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textSize="@dimen/sp12"
+        android:textColorHint="@color/warmGrey"
+        android:paddingStart="@dimen/dp18"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:id="@+id/email"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginStart="@dimen/dp43"
+        android:layout_marginEnd="@dimen/dp43"
+        android:background="@color/seashell"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002"
+        tools:ignore="RtlSymmetry,TextFields"
+        android:autofillHints="" />
+
+    <EditText
+        android:textSize="@dimen/sp12"
+        android:textColorHint="@color/warmGrey"
+        android:paddingStart="@dimen/dp18"
+        android:hint="@string/password"
+        android:background="@color/seashell"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        android:id="@+id/password"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:inputType="text"
+        tools:ignore="RtlSymmetry,TextFields"
+        android:autofillHints="" />
+
+    <CheckBox
+        android:layout_marginTop="@dimen/dp22"
+        android:layout_marginStart="@dimen/dp38"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checked="true"
+        android:textSize="@dimen/sp8"
+        android:textColor="@color/gainSbroro"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <Button
+        android:textSize="@dimen/sp12"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/gainSbroro"
+        android:background="@drawable/sign_in_box"
+        android:id="@+id/sign_in"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/brownGrey"
+        android:text="@string/sign_up_now"
+        android:layout_marginTop="@dimen/dp14"
+        app:layout_constraintTop_toBottomOf="@id/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/brownGrey"
+        android:text="@string/forgot_password"
+        android:layout_marginTop="@dimen/dp14"
+        app:layout_constraintTop_toBottomOf="@id/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

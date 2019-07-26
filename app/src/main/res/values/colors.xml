@@ -7,6 +7,12 @@
     <color name="cloudBurst">#373D4A</color>
     <color name="paleOyster">#9D8C70</color>
     <color name="gainSbroro">#E2E2E2</color>
+    <color name="seashell">#FFF8F0</color>
+    <color name="warmGrey">#979797</color>
+    <color name="white">#ffffff</color>
+    <color name="cinnabar">#EB4C38</color>
+    <color name="brownGrey">#9d8c70</color>
+
 
 
 </resources>

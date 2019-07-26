@@ -91,7 +91,7 @@
     <dimen name="sp36">36sp</dimen>
     <!--//////////////-->
 
-    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
     <dimen name="free_shipping">2dp</dimen>
 
 </resources>
