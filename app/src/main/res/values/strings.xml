@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">layout_practice_seven_linkSomeLayout</string>
+    <string name="main_background">main_background</string>
+    <string name="writer">A Free App Template by</string>
+    <string name="write_name">Paul Hershey</string>
+    <string name="sign_in">Sign In</string>
+</resources>

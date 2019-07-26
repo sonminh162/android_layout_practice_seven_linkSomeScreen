@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="cloudBurst">#373D4A</color>
+    <color name="paleOyster">#9D8C70</color>
+    <color name="gainSbroro">#E2E2E2</color>
+
+
+</resources>
