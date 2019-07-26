@@ -10,7 +10,7 @@
 
     <TextView
         android:fontFamily="sans-serif-thin"
-        android:textSize="@dimen/sp18"
+        android:textSize="@dimen/sp26"
         android:textColor="@color/gainSbroro"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -22,11 +22,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:textColor="@color/warmGrey"
         android:textSize="@dimen/sp12"
         android:textColorHint="@color/warmGrey"
         android:paddingStart="@dimen/dp18"
         android:hint="@string/email"
-        android:inputType="text"
+        android:inputType="textEmailSubject"
         android:id="@+id/email"
         android:layout_width="@dimen/dp0"
         android:layout_height="@dimen/dp50"
@@ -42,6 +43,7 @@
         android:autofillHints="" />
 
     <EditText
+        android:textColor="@color/warmGrey"
         android:textSize="@dimen/sp12"
         android:textColorHint="@color/warmGrey"
         android:paddingStart="@dimen/dp18"
@@ -89,6 +91,8 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <TextView
+        android:clickable="true"
+        android:onClick="onClick"
         android:id="@+id/sign_up"
         android:fontFamily="sans-serif"
         android:textSize="@dimen/sp13"

@@ -57,6 +57,11 @@
     <dimen name="dp160">160dp</dimen>
     <dimen name="dp166">166dp</dimen>
     <dimen name="dp55">55dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="dp300">300dp</dimen>
+    <dimen name="dp320">320dp</dimen>
+    <dimen name="dp330">330dp</dimen>
+    <dimen name="dp340">340dp</dimen>
     <!--////////////////-->
     <dimen name="sp1">1sp</dimen>
     <dimen name="sp2">2sp</dimen>
