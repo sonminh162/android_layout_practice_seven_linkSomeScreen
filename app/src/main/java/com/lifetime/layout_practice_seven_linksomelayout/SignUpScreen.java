@@ -14,10 +14,10 @@ import android.widget.TextView;
 
 import java.util.regex.Pattern;
 
-import static com.lifetime.layout_practice_seven_linksomelayout.Constant.emailValue;
-import static com.lifetime.layout_practice_seven_linksomelayout.Constant.firstNameValue;
-import static com.lifetime.layout_practice_seven_linksomelayout.Constant.lastNameValue;
-import static com.lifetime.layout_practice_seven_linksomelayout.Constant.passwordValue;
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.EMAIL;
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.FIRST_NAME;
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.LAST_NAME;
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.PASSWORD;
 
 public class SignUpScreen extends AppCompatActivity {
 
@@ -136,10 +136,10 @@ public class SignUpScreen extends AppCompatActivity {
         String getEmail = emailSignUp.getText().toString();
         String getPassword = passwordSignUp.getText().toString();
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(firstNameValue, getFirstName);
-        editor.putString(lastNameValue, getLastName);
-        editor.putString(emailValue, getEmail);
-        editor.putString(passwordValue, getPassword);
+        editor.putString(FIRST_NAME, getFirstName);
+        editor.putString(LAST_NAME, getLastName);
+        editor.putString(EMAIL, getEmail);
+        editor.putString(PASSWORD, getPassword);
         editor.apply();
     }
 

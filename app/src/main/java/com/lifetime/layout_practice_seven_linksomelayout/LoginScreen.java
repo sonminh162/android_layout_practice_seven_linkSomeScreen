@@ -10,18 +10,20 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.EMAIL;
+import static com.lifetime.layout_practice_seven_linksomelayout.Constant.PASSWORD;
+
 public class LoginScreen extends AppCompatActivity {
 
     TextView signUp;
     Button signIn;
     TextView email;
     TextView password;
-    String inputEmail;
-    String inputPassword;
     SharedPreferences sharedPreferences;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_screen);
 
@@ -35,11 +37,8 @@ public class LoginScreen extends AppCompatActivity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                inputEmail = email.getText().toString();
-                inputPassword = password.getText().toString();
-                String emailInData = sharedPreferences.getString("email","");
-                boolean emailValid = inputEmail.equals(emailInData);
-                boolean passwordValid = inputPassword.equals(sharedPreferences.getString("password",""));
+                boolean emailValid = email.getText().toString().equals(sharedPreferences.getString(EMAIL,""));
+                boolean passwordValid = password.getText().toString().equals(sharedPreferences.getString(PASSWORD,""));
                 if(emailValid && passwordValid) {
                     Intent intent = new Intent(LoginScreen.this, WelcomeScreen.class);
                     startActivity(intent);
