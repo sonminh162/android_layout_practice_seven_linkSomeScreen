@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cloudBurst"
-    tools:context=".MainActivity">
+    tools:context=".SignUpScreen">
 
     <ImageView
         android:id="@+id/background"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginStart="@dimen/dp84"
+        android:layout_marginEnd="@dimen/dp84"
         android:adjustViewBounds="true"
         android:contentDescription="@string/main_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/new_logon" />
@@ -33,9 +32,7 @@
         android:id="@+id/writer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/writer"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="509dp" />
+        android:text="@string/writer" />
 
     <TextView
         android:id="@+id/writer_name"

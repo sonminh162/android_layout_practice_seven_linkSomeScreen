@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloudBurst">
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp30"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/sign_up"
+        android:textColor="@color/gainSbroro"
+        android:textSize="@dimen/sp26" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="@dimen/dp340"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp200"
+        android:autofillHints=""
+        android:background="@color/seashell"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:paddingStart="@dimen/dp18"
+        android:textColor="@color/warmGrey"
+        android:textColorHint="@color/warmGrey"
+        android:textSize="@dimen/sp12"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="@dimen/dp340"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/first_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:autofillHints=""
+        android:background="@color/seashell"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:paddingStart="@dimen/dp18"
+        android:textColor="@color/warmGrey"
+        android:textColorHint="@color/warmGrey"
+        android:textSize="@dimen/sp12"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/email_sign_up"
+        android:layout_width="@dimen/dp340"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/last_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:autofillHints=""
+        android:background="@color/seashell"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/dp18"
+        android:textColor="@color/warmGrey"
+        android:textColorHint="@color/warmGrey"
+        android:textSize="@dimen/sp12"
+        tools:ignore="RtlSymmetry,TextFields" />
+
+    <EditText
+        android:id="@+id/password_sign_up"
+        android:layout_width="@dimen/dp340"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/email_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:autofillHints=""
+        android:background="@color/seashell"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/dp18"
+        android:textColor="@color/warmGrey"
+        android:textColorHint="@color/warmGrey"
+        android:textSize="@dimen/sp12"
+        tools:ignore="RtlSymmetry,TextFields" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="@dimen/dp220"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/sign_in_box"
+        android:fontFamily="sans-serif"
+        android:text="@string/sign_up_button"
+        android:textColor="@color/gainSbroro"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/first_name_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name"
+        android:layout_marginStart="@dimen/dp40"
+        android:textColor="@color/cinnabar"
+        android:textSize="@dimen/sp10" />
+
+    <TextView
+        android:id="@+id/last_name_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_name"
+        android:layout_marginStart="@dimen/dp40"
+        android:textColor="@color/cinnabar"
+        android:textSize="@dimen/sp10" />
+
+    <TextView
+        android:id="@+id/email_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_sign_up"
+        android:layout_marginStart="@dimen/dp40"
+        android:textColor="@color/cinnabar"
+        android:textSize="@dimen/sp10" />
+
+    <TextView
+        android:id="@+id/password_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_sign_up"
+        android:layout_marginStart="@dimen/dp40"
+        android:textColor="@color/cinnabar"
+        android:textSize="@dimen/sp10" />
+
+</RelativeLayout>

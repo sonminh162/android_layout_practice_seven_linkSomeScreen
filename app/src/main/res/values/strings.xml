@@ -4,4 +4,29 @@
     <string name="writer">A Free App Template by</string>
     <string name="write_name">Paul Hershey</string>
     <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">REMEMBER ME</string>
+    <string name="sign_in_button">SIGN IN</string>
+    <string name="forgot_password"><u>FORGOT_PASSWORD?</u></string>
+    <string name="sign_up_now"><u>SIGN UP NOW</u></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="sign_up_button">SIGN UP</string>
+
+    <string name="empty_error">Field can\'t be empty</string>
+    <string name="valid_email_error">Enter a valid email address</string>
+    <string name="valid_password_error">"Password too weak"</string>
+    <string name="empty" />
+
+    <string name="title_dialog">Information</string>
+    <string name="message_dialog">Sign Up Successfully</string>
+    <string name="next_activity">Back</string>
+
+    <string name="firstNameEdit">firstName</string>
+    <string name="lastNameEdit">lastName</string>
+    <string name="emailEdit">email</string>
+    <string name="passwordEdit">password</string>
+
 </resources>
