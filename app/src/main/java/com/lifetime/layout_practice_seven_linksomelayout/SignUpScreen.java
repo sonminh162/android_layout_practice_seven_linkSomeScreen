@@ -73,10 +73,10 @@ public class SignUpScreen extends AppCompatActivity {
     }
 
     private boolean validate() {
-        validateName();
-        validatePassword();
-        validateEmail();
-        return validateName() && validateName() && validateEmail() && validatePassword();
+        boolean checkedName = validateName();
+        boolean checkedPassword = validatePassword();
+        boolean checkedEmail = validateEmail();
+        return checkedName && checkedPassword && checkedEmail;
     }
 
     private boolean validateName() {
