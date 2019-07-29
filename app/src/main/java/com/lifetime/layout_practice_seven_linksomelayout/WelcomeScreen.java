@@ -6,7 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WelcomeGiaoSu extends AppCompatActivity {
+public class WelcomeScreen extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 2500;
 
@@ -18,7 +18,7 @@ public class WelcomeGiaoSu extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(WelcomeGiaoSu.this,TempStep.class);
+                Intent intent = new Intent(WelcomeScreen.this, LoginScreen.class);
                 startActivity(intent);
                 finish();
             }

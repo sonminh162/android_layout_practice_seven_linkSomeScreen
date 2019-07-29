@@ -50,8 +50,8 @@
         android:hint="@string/password"
         android:background="@color/seashell"
         android:layout_marginTop="@dimen/dp30"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
         app:layout_constraintEnd_toEndOf="@id/email"
         app:layout_constraintStart_toStartOf="@id/email"
         android:id="@+id/password"
@@ -71,9 +71,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/remember_me"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="477dp" />
+        android:text="@string/remember_me" />
 
     <Button
         android:textSize="@dimen/sp12"
@@ -81,7 +79,7 @@
         android:textColor="@color/gainSbroro"
         android:background="@drawable/sign_in_box"
         android:id="@+id/sign_in"
-        android:layout_width="220dp"
+        android:layout_width="@dimen/dp220"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,8 +89,6 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <TextView
-        android:clickable="true"
-        android:onClick="onClick"
         android:id="@+id/sign_up"
         android:fontFamily="sans-serif"
         android:textSize="@dimen/sp13"

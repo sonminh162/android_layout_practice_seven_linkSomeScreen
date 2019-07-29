@@ -62,6 +62,7 @@
     <dimen name="dp320">320dp</dimen>
     <dimen name="dp330">330dp</dimen>
     <dimen name="dp340">340dp</dimen>
+    <dimen name="dp220">220dp</dimen>
     <!--////////////////-->
     <dimen name="sp1">1sp</dimen>
     <dimen name="sp2">2sp</dimen>

@@ -14,4 +14,19 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="sign_up_button">SIGN UP</string>
+
+    <string name="empty_error">Field can\'t be empty</string>
+    <string name="valid_email_error">Enter a valid email address</string>
+    <string name="valid_password_error">"Password too weak"</string>
+    <string name="empty" />
+
+    <string name="title_dialog">Information</string>
+    <string name="message_dialog">Sign Up Successfully</string>
+    <string name="next_activity">Back</string>
+
+    <string name="firstNameEdit">firstName</string>
+    <string name="lastNameEdit">lastName</string>
+    <string name="emailEdit">email</string>
+    <string name="passwordEdit">password</string>
+
 </resources>

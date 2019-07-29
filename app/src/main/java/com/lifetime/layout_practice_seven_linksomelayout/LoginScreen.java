@@ -10,8 +10,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TempStep extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity {
 
+    TextView signUp;
     Button signIn;
     TextView email;
     TextView password;
@@ -24,32 +25,38 @@ public class TempStep extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_screen);
 
+        signUp = findViewById(R.id.sign_up);
         signIn = findViewById(R.id.sign_in);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-
-        inputEmail = email.getText().toString();
-        inputPassword = password.getText().toString();
 
         sharedPreferences = getSharedPreferences("dataSignUp",MODE_PRIVATE);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean emailValid = email.getText().toString().equals(sharedPreferences.getString("email","") );
-                boolean passwordValid = password.getText().toString().equals(sharedPreferences.getString("password",""));
+                inputEmail = email.getText().toString();
+                inputPassword = password.getText().toString();
+                String emailInData = sharedPreferences.getString("email","");
+                boolean emailValid = inputEmail.equals(emailInData);
+                boolean passwordValid = inputPassword.equals(sharedPreferences.getString("password",""));
                 if(emailValid && passwordValid) {
-                    Intent intent = new Intent(TempStep.this, WelcomeGiaoSu.class);
+                    Intent intent = new Intent(LoginScreen.this, WelcomeScreen.class);
                     startActivity(intent);
                 }else{
-                    Toast.makeText(TempStep.this, "Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginScreen.this, "Failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginScreen.this, SignUpScreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
-    public void onClick(View view) {
-        Intent intent = new Intent(TempStep.this,MainActivity.class);
-        startActivity(intent);
-    }
 }
