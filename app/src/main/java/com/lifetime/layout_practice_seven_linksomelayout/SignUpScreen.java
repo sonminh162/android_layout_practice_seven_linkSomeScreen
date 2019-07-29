@@ -81,8 +81,8 @@ public class SignUpScreen extends AppCompatActivity {
 
     private boolean validateName() {
         boolean flag1 = true, flag2 = true;
-        String getFirstName = firstName.getText().toString();
-        String getLastName = lastName.getText().toString();
+        String getFirstName = firstName.getText().toString().trim();
+        String getLastName = lastName.getText().toString().trim();
 
         if (getFirstName.isEmpty()) {
             firstNameError.setText(R.string.empty_error);
@@ -117,7 +117,7 @@ public class SignUpScreen extends AppCompatActivity {
     }
 
     private boolean validatePassword() {
-        String getPassword = passwordSignUp.getText().toString().trim();
+        String getPassword = passwordSignUp.getText().toString();
         if (getPassword.isEmpty()) {
             passwordError.setText(R.string.empty_error);
             return false;
