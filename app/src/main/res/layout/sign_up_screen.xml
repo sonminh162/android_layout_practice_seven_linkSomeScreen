@@ -93,7 +93,7 @@
         android:textColor="@color/gainSbroro"
         android:background="@drawable/sign_in_box"
         android:id="@+id/sign_up_button"
-        android:layout_width="220dp"
+        android:layout_width="@dimen/dp220"
         android:layout_height="wrap_content"
         android:text="@string/sign_up_button" />
 
