@@ -32,17 +32,17 @@ public class LoginScreen extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
 
-        sharedPreferences = getSharedPreferences("dataSignUp",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("dataSignUp", MODE_PRIVATE);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean emailValid = email.getText().toString().equals(sharedPreferences.getString(EMAIL,""));
-                boolean passwordValid = password.getText().toString().equals(sharedPreferences.getString(PASSWORD,""));
-                if(emailValid && passwordValid) {
+                boolean emailValid = email.getText().toString().equals(sharedPreferences.getString(EMAIL, ""));
+                boolean passwordValid = password.getText().toString().equals(sharedPreferences.getString(PASSWORD, ""));
+                if (emailValid && passwordValid) {
                     Intent intent = new Intent(LoginScreen.this, WelcomeScreen.class);
                     startActivity(intent);
-                }else{
+                } else {
                     Toast.makeText(LoginScreen.this, "Failed", Toast.LENGTH_SHORT).show();
                 }
             }

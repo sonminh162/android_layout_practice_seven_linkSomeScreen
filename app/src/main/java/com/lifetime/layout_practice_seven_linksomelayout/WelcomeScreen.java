@@ -22,6 +22,6 @@ public class WelcomeScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_TIME_OUT);
+        }, SPLASH_TIME_OUT);
     }
 }
