@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
     @SuppressLint("SetTextI18n")
     private boolean validateName(){
         boolean flag1=true,flag2=true;
