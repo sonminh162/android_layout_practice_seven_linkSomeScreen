@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="dp_30">-30dp</dimen>
     <dimen name="dp19">19dp</dimen>
     <dimen name="dp0">0dp</dimen>
     <dimen name="dp9_4">9.4dp</dimen>
@@ -39,7 +40,6 @@
     <dimen name="dp35">35dp</dimen>
     <dimen name="dp36">36dp</dimen>
     <dimen name="dp37">37dp</dimen>
-    <dimen name="dp50">50dp</dimen>
     <dimen name="dp38">38dp</dimen>
     <dimen name="dp39">39dp</dimen>
     <dimen name="dp90">90dp</dimen>
@@ -53,10 +53,25 @@
     <dimen name="dp47">47dp</dimen>
     <dimen name="dp48">48dp</dimen>
     <dimen name="dp49">49dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp51">51dp</dimen>
+    <dimen name="dp52">52dp</dimen>
+    <dimen name="dp53">53dp</dimen>
     <dimen name="dp175">175dp</dimen>
     <dimen name="dp160">160dp</dimen>
     <dimen name="dp166">166dp</dimen>
     <dimen name="dp55">55dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="dp300">300dp</dimen>
+    <dimen name="dp320">320dp</dimen>
+    <dimen name="dp330">330dp</dimen>
+    <dimen name="dp340">340dp</dimen>
+    <dimen name="dp220">220dp</dimen>
+    <dimen name="dp84">84dp</dimen>
+    <dimen name="dp85">85dp</dimen>
+    <dimen name="dp86">86dp</dimen>
+    <dimen name="dp5_3">5.3dp</dimen>
+    <dimen name="dp39_7">39.7dp</dimen>
     <!--////////////////-->
     <dimen name="sp1">1sp</dimen>
     <dimen name="sp2">2sp</dimen>
@@ -91,7 +106,7 @@
     <dimen name="sp36">36sp</dimen>
     <!--//////////////-->
 
-    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
     <dimen name="free_shipping">2dp</dimen>
 
 </resources>
