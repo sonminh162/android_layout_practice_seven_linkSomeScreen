@@ -27,7 +27,6 @@
         android:layout_height="@dimen/dp50"
         android:layout_marginStart="@dimen/dp43"
         android:layout_marginEnd="@dimen/dp43"
-        android:autofillHints=""
         android:background="@color/seashell"
         android:hint="@string/email"
         android:inputType="textEmailSubject"
@@ -40,7 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.42000002"
-        tools:ignore="RtlSymmetry,TextFields" />
+        tools:ignore="RtlSymmetry,TextFields"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/password"
@@ -50,7 +50,7 @@
         android:autofillHints=""
         android:background="@color/seashell"
         android:hint="@string/password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:paddingStart="@dimen/dp18"
         android:textColor="@color/warmGrey"
         android:textColorHint="@color/warmGrey"
